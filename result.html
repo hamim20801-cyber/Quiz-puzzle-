@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Result</title>
+<title>Quiz Result</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +14,7 @@
 
 <h2 id="score"></h2>
 
-<button onclick="restart()">
+<button onclick="playAgain()">
 Play Again
 </button>
 
@@ -22,10 +22,12 @@ Play Again
 
 <script>
 
-document.getElementById("score").innerHTML =
-"Your Score: " + localStorage.getItem("score")
+let score = localStorage.getItem("score")
 
-function restart(){
+document.getElementById("score").innerHTML =
+"Your Score: " + score
+
+function playAgain(){
 
 location.href="index.html"
 

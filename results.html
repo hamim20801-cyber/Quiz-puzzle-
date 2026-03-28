@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Result</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Quiz Result</h1>
+
+<h2 id="score"></h2>
+
+<button onclick="restart()">
+Play Again
+</button>
+
+</div>
+
+<script>
+
+document.getElementById("score").innerHTML =
+"Your Score: " + localStorage.getItem("score")
+
+function restart(){
+
+location.href="index.html"
+
+}
+
+</script>
+
+</body>
+</html>

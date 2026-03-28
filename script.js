@@ -146,3 +146,22 @@ next()
 },1000)
 
 load()
+function generateRandomMath(){
+
+let a = Math.floor(Math.random()*20)
+let b = Math.floor(Math.random()*20)
+
+let answer = a + b
+
+return {
+q: a + " + " + b + " = ?",
+a:[
+answer-1,
+answer,
+answer+1,
+answer+2
+],
+c:1
+}
+
+  }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Choose Category</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Choose Category</h1>
+
+<button onclick="startQuiz('history')">
+Myanmar History
+</button>
+
+<button onclick="startQuiz('english')">
+English Grammar
+</button>
+
+<button onclick="startQuiz('math')">
+Brain Puzzle
+</button>
+
+</div>
+
+<script>
+
+function startQuiz(category){
+
+localStorage.setItem("category",category)
+
+location.href="quiz.html"
+
+}
+
+</script>
+
+</body>
+</html>

@@ -10,14 +10,26 @@
 
 <div class="container">
 
-<h2 id="timer">Time: 15</h2>
+<h2 id="timer">Time: 20</h2>
 
 <h3 id="question"></h3>
 
-<button onclick="check(0)" id="a"></button>
-<button onclick="check(1)" id="b"></button>
-<button onclick="check(2)" id="c"></button>
-<button onclick="check(3)" id="d"></button>
+<div id="choices">
+
+<button onclick="checkChoice(0)" id="a"></button>
+<button onclick="checkChoice(1)" id="b"></button>
+<button onclick="checkChoice(2)" id="c"></button>
+<button onclick="checkChoice(3)" id="d"></button>
+
+</div>
+
+<div id="textAnswer" style="display:none">
+
+<input id="answerInput" placeholder="Type your answer">
+
+<button onclick="submitAnswer()">Submit</button>
+
+</div>
 
 </div>
 

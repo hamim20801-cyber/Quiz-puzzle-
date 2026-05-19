@@ -79,7 +79,7 @@ c:2
 
 yfssu:[
 
-// International Universities Quiz
+// International Universities
 
 {
 type:"mc",
@@ -90,7 +90,7 @@ c:1
 
 {
 type:"mc",
-q:"Massachusetts Institute of Technology ၏ အတိုကောက်အမည်မှာ မည်သည့်အရာဖြစ်သနည်း။",
+q:"Massachusetts Institute of Technology ၏ အတိုကောက်အမည်မှာ?",
 a:["MST","MTech","MIT","MTU"],
 c:2
 },
@@ -111,7 +111,7 @@ c:1
 
 {
 type:"mc",
-q:"University of Cambridge တွင် ပညာသင်ကြားခဲ့သော scientist တစ်ဦးမှာ မည်သူဖြစ်သနည်း?",
+q:"University of Cambridge တွင် ပညာသင်ကြားခဲ့သော scientist တစ်ဦးမှာ?",
 a:["Isaac Newton","Albert Einstein","Nikola Tesla","Thomas Edison"],
 c:0
 },
@@ -148,9 +148,9 @@ c:3
 
 {
 type:"mc",
-q:"အနော်ရထာမင်းသည် မြန်မာနိုင်ငံသမိုင်းတွင် မည်သို့သောသူမျိုးဖြစ်သနည်း?",
-a:["ပထမဆုံး အင်္ဂလိပ်စာသင်ပေးသူ","မြန်မာနိုင်ငံကို စည်းလုံးအောင် ပြုလုပ်နိုင်သူ","ပင်လယ်ရေကြောင်း ဖွင့်လှစ်သူ","ကုန်သွယ်ရေးသာ တိုးတက်စေသူ"],
-c:1
+q:"အနော်ရထာမင်းသည် မြန်မာနိုင်ငံကို စည်းလုံးအောင် ပြုလုပ်နိုင်သူ ဖြစ်သလား?",
+a:["ဟုတ်","မဟုတ်","မသိ","အခြား"],
+c:0
 },
 
 {
@@ -258,7 +258,7 @@ c:2
 {
 type:"mc",
 q:"1988 လူထုလှုပ်ရှားမှုကို ပိုမိုကြီးထွားစေခဲ့သော ဖြစ်စဉ်?",
-a:["အာဏာသိမ်းမှုကြေညာခြင်း","ဖုန်းမော် အရေးအခင်း","ရွေးကောက်ပွဲကျင်းပခြင်း","စီးပွားရေးပိတ်ဆို့မှု"],
+a:["အာဏာသိမ်းမှု","ဖုန်းမော် အရေးအခင်း","ရွေးကောက်ပွဲ","ပိတ်ဆို့မှု"],
 c:1
 },
 
@@ -278,20 +278,6 @@ c:1
 
 {
 type:"mc",
-q:"U Thant Island ဟု နာမည်ပေးထားသော ကျွန်းငယ်မှာ?",
-a:["Liberty Island","Roosevelt Island","Belmont Island","Ellis Island"],
-c:2
-},
-
-{
-type:"mc",
-q:"ဦးသန့်၏ ခေါင်းတလားကို ကြိုဆိုခဲ့သောကြောင့် ရာထူးမှ အနားပေးခံခဲ့ရသူ?",
-a:["ဦးနု","ဦးသိန်းဖေမြင့်","ဦးနေဝင်း","ဦးအောင်ထွန်း"],
-c:3
-},
-
-{
-type:"mc",
 q:"United Nations ကို စတင်တည်ထောင်ခဲ့သောခုနှစ်?",
 a:["1919","1945","1955","1961"],
 c:1
@@ -302,6 +288,20 @@ type:"mc",
 q:"အမေရိကန်ပြည်ထောင်စု၏ ပထမဆုံး သမ္မတမှာ?",
 a:["Abraham Lincoln","Thomas Jefferson","George Washington","John Adams"],
 c:2
+},
+
+// Riddle
+
+{
+type:"text",
+q:"၂၈ ရက်ရှိတဲ့လ ဘယ်နှလရှိသလဲ?",
+answer:"12"
+},
+
+{
+type:"text",
+q:"Justin ရဲ့ အဖေမှာ သား ၅ ယောက်ရှိတယ်။ One Two Three Four နဲ့ ... ?",
+answer:"Justin"
 }
 
 ]
@@ -310,12 +310,15 @@ c:2
 
 let quiz = quizData[category]
 
+if(!quiz){
+quiz = quizData.history
+}
+
 quiz = quiz.sort(()=>Math.random()-0.5)
 
 let index = 0
 let score = 0
 let time = 15
-let timer
 
 function load(){
 
@@ -392,18 +395,19 @@ location.href = "result.html"
 
 }
 
-timer = setInterval(()=>{
+setInterval(()=>{
 
 time--
 
 document.getElementById("timer").innerHTML =
-"⏰ Time Left : " + time
+"⏰ Time : " + time
 
 if(time <= 0){
+
 next()
+
 }
 
 },1000)
 
 load()
-```

@@ -46,40 +46,16 @@ button:hover{
     opacity:0.8;
 }
 
-/* Tablet */
-@media (max-width:768px){
-    .main{
-        gap:20px;
-        padding-top:40px;
-    }
-
-    .box{
-        width:90%;
-        max-width:350px;
-    }
-
-    button{
-        width:100%;
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
     }
 }
 
-/* Mobile */
-@media (max-width:480px){
-    .box{
-        width:95%;
-        padding:20px;
-    }
-
-    .box h1{
-        font-size:24px;
-    }
-
-    .box p{
-        font-size:15px;
-    }
-
-    button{
-        font-size:16px;
-        padding:12px;
+/* Desktop */
+@media (min-width: 769px) {
+    .container {
+        flex-direction: row;
     }
 }

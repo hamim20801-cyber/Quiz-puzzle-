@@ -28,38 +28,151 @@ math:[
 
 yfssu:[
 
-// WORLD CAPITALS
-{ type:"mc", q:"What is the capital of Canada?", a:["Toronto","Ottawa","Vancouver","Montreal"], c:1 },
-{ type:"mc", q:"What is the capital of France?", a:["Lyon","Marseille","Nice","Paris"], c:3 },
-{ type:"mc", q:"What is the capital of Australia?", a:["Sydney","Melbourne","Canberra","Perth"], c:2 },
-{ type:"mc", q:"What is the capital of Egypt?", a:["Alexandria","Cairo","Giza","Luxor"], c:1 },
+// July Quiz
+{
+type:"mc",
+q:"ဇူလိုင်လမှာ ရက်ပေါင်း ဘယ်နှရက် ရှိသလဲ။",
+a:["30 ရက်","31 ရက်","29 ရက်","28 ရက်"],
+c:1
+},
 
-// FOOTBALL WORLD CUP
-{ type:"mc", q:"ပထမဆုံး World Cup ကို ဘယ်နှစ်မှာ ကျင်းပခဲ့သလဲ?", a:["1934","1938","1926","1930"], c:3 },
-{ type:"mc", q:"2002 World Cup အိမ်ရှင်နိုင်ငံတွေ?", a:["Japan & South Korea","China & Sri Lanka","Malaysia & Singapore","Qatar & Saudi Arabia"], c:0 },
-{ type:"mc", q:"World Cup ဘယ်နှစ်နှစ်တစ်ကြိမ်?", a:["5","2","4","3"], c:2 },
-{ type:"mc", q:"World Cup အိမ်ရှင်ထဲက အုပ်စုကနေထွက်ခဲ့တဲ့နိုင်ငံ?", a:["Japan","South Africa","Switzerland","USA"], c:1 },
+{
+type:"mc",
+q:"ဇူလိုင်လ (23) ရက်နောက်ပိုင်း မွေးဖွားသူများ၏ Zodiac Sign မှာ?",
+a:["Cancer","Virgo","Leo","Libra"],
+c:2
+},
 
-// SCIENCE & GENERAL
-{ type:"mc", q:"Romeo and Juliet က ဘာအမျိုးအစားလဲ?", a:["Novel","Play","Poetry","Essay"], c:1 },
-{ type:"mc", q:"Light speed ရှင်းပြသူနာမည်ကြီးသူ?", a:["Newton","Darwin","Galileo","Einstein"], c:3 },
-{ type:"mc", q:"Olympic ဘယ်နှစ်နှစ်တစ်ကြိမ်?", a:["2","3","4","5"], c:2 },
-{ type:"mc", q:"Zero ကို ပထမအသုံးပြုသူတွေ?", a:["Indians","Greeks","Romans","Egyptians"], c:0 },
+{
+type:"mc",
+q:"WWW ၏ အဓိပ္ပာယ်အပြည့်အစုံမှာ?",
+a:["World Wide Web","Word Wide Web","Western Website Web","World Wide Window"],
+c:0
+},
 
-// SCIENCE
-{ type:"mc", q:"Which organ pumps blood?", a:["Lung","Liver","Heart","Kidney"], c:2 },
-{ type:"mc", q:"Gold symbol?", a:["Go","Gd","Ag","Au"], c:3 },
-{ type:"mc", q:"Solar system center?", a:["Earth","Moon","Sun","Mars"], c:2 },
-{ type:"mc", q:"Renewable energy?", a:["Coal","Gas","Solar","Oil"], c:2 },
+{
+type:"mc",
+q:"တစ်နှစ်အတွင်း ရက်ပေါင်း (30) တိတိရှိသော လ စုစုပေါင်းမှာ?",
+a:["4 လ","5 လ","6 လ","7 လ"],
+c:0
+},
 
-// POLITICS
-{ type:"mc", q:"Communist Manifesto authors?", a:["Lenin","Mao","Stalin","Marx & Engels"], c:3 },
-{ type:"mc", q:"China system?", a:["Communism","Democracy","Socialism","Monarchy"], c:0 },
-{ type:"mc", q:"Che Guevara revolution?", a:["France","Cuba","Russia","Industrial"], c:1 },
-{ type:"mc", q:"Hitler system?", a:["Socialism","Capitalism","Nazi","Democracy"], c:2 }
+{
+type:"mc",
+q:"ရေငွေ့တွေ စုစည်းပြီး မိုးတိမ်ဖြစ်ပေါ်လာစေတဲ့ ဖြစ်စဉ်ကို?",
+a:["Evaporation","Reaction","Melting","Condensation"],
+c:3
+},
+
+// Science
+{
+type:"mc",
+q:"လူ့ခန္ဓာကိုယ်မှာ အကြီးဆုံး အင်္ဂါအစိတ်အပိုင်းက ဘာလဲ။",
+a:["အသည်း","အရေပြား","ဦးနှောက်","အဆုတ်"],
+c:1
+},
+
+{
+type:"mc",
+q:"H₂O ဆိုတာ ဘာကိုခေါ်သလဲ။",
+a:["ဟိုက်ဒရိုဂျင်ပါအောက်ဆိုဒ်","ရေ","ဆားရည်","အက်ဆစ်"],
+c:1
+},
+
+{
+type:"mc",
+q:"E = mc² ဆိုတဲ့ ညီမျှခြင်းက ဘာကို ရှင်းပြသလဲ။",
+a:["Gravity","Mass-Energy Equivalence","Speed of Light","Quantum Physics"],
+c:1
+},
+
+{
+type:"mc",
+q:"DNA ရဲ့ ပုံသဏ္ဍန်ကို ဘယ်လိုခေါ်သလဲ။",
+a:["Alpha Helix","Double Helix","Beta Sheet","Triple Strand"],
+c:1
+},
+
+{
+type:"mc",
+q:"ကမ္ဘာပေါ်မှာ လူဦးရေ အများဆုံး မြို့က ဘယ်မြို့လဲ။",
+a:["Tokyo","Shanghai","Delhi","Mumbai"],
+c:2
+},
+
+// Technology
+{
+type:"mc",
+q:"CPU ဆိုသည်မှာ မည်သည်ကိုဆိုလိုသနည်း။",
+a:["Central Processing Unit","Computer Processing Unit","Central Program Utility","Computer Program Unit"],
+c:0
+},
+
+{
+type:"mc",
+q:"Windows Operating System ကို မည်သည့်ကုမ္ပဏီက တီထွင်ခဲ့သနည်း။",
+a:["Apple","Google","Microsoft","Samsung"],
+c:2
+},
+
+{
+type:"mc",
+q:"Wi-Fi သည် ဘာလုပ်ဆောင်နိုင်စေသနည်း။",
+a:["စာရွက်စာတမ်း ပုံနှိပ်စေသည်","အင်တာနက်သို့ ကြိုးမဲ့ချိတ်ဆက်နိုင်စေသည်","ဖိုင်သိမ်းဆည်းစေသည်","ဘက်ထရီအားသွင်းစေသည်"],
+c:1
+},
+
+{
+type:"mc",
+q:"Input Device တစ်ခုမှာ ဘယ်ဟာလဲ။",
+a:["Monitor","Speaker","Printer","Keyboard"],
+c:3
+},
+
+{
+type:"mc",
+q:"Antivirus Software ၏ အဓိကရည်ရွယ်ချက်မှာ?",
+a:["Internet မြန်စေသည်","Website ဖန်တီးသည်","Virus နှင့် Malware မှ ကာကွယ်သည်","Storage တိုးစေသည်"],
+c:2
+},
+
+// Politics & General Knowledge
+{
+type:"mc",
+q:"ကမ္ဘာ့ပထမဆုံး အမျိုးသမီးသမ္မတ ဖြစ်လာသူမှာ?",
+a:["Vigdís Finnbogadóttir","Corazon Aquino","Dilma Rousseff","Ellen Johnson Sirleaf"],
+c:0
+},
+
+{
+type:"mc",
+q:"ဒီမိုကရေစီ (Democracy) ဆိုသော စကားလုံးသည် ဘယ်ဘာသာစကားမှ ဆင်းသက်လာသလဲ။",
+a:["Latin","Greek","French","Sanskrit"],
+c:1
+},
+
+{
+type:"mc",
+q:"ကမ္ဘာ့သမိုင်းတွင် ပထမဆုံး အမျိုးသမီး ဝန်ကြီးချုပ် ဖြစ်လာသူမှာ?",
+a:["Margaret Thatcher","Indira Gandhi","Sirimavo Bandaranaike","Golda Meir"],
+c:2
+},
+
+{
+type:"mc",
+q:"ကမ္ဘာ့အသက်အငယ်ဆုံး နိုင်ငံအဖြစ် အသိအမှတ်ပြုခံထားရသော နိုင်ငံမှာ?",
+a:["Timor-Leste","South Sudan","Kosovo","Montenegro"],
+c:1
+},
+
+{
+type:"mc",
+q:"Veto Power ကို အသုံးပြုနိုင်သော ကုလသမဂ္ဂ အဖွဲ့မှာ?",
+a:["General Assembly","Security Council","International Court of Justice","UNESCO"],
+c:1
+}
 
 ]
-
 }
 
 // fallback

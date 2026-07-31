@@ -11,7 +11,7 @@ body{
     align-items:center;
     gap:30px;
     flex-wrap:wrap;
-    padding-top:80px;
+    padding:80px 20px;
 }
 
 .box{
@@ -46,16 +46,26 @@ button:hover{
     opacity:0.8;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+
+/* Mobile View */
+@media (max-width:768px){
+
+    .main{
+        flex-direction:column;
+        padding-top:40px;
+    }
+
+    .box{
+        width:90%;
+        max-width:300px;
     }
 }
 
-/* Desktop */
-@media (min-width: 769px) {
-    .container {
-        flex-direction: row;
+
+/* Desktop View */
+@media (min-width:769px){
+
+    .main{
+        flex-direction:row;
     }
 }
